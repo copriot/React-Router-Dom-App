@@ -20,7 +20,7 @@ export function ProductProvider({ children }) {
         : `/products/category/${selectedCategory}`; //seçili kategoriye göre ürünler
     api.get(url).then((res) => setProducts(res.data));
   }, [selectedCategory]);
-  console.log(products);
+  //console.log(products);
   // Sağlayıcı fonksiyonları mutlaka provider'ı return etmeli ve App'i sarmalamalı
   //Value olarak eklenen degerler projedeki bileşenler tarafından erişilebilir olur.
 
